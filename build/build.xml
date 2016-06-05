@@ -387,6 +387,7 @@
 		<build-addon name="sniTerminator" />
 		<build-addon name="soap" />
 		<build-addon name="sse" />
+		<build-addon name="tlsDebug" />
 		<build-addon name="wappalyzer" />
 
 	</target>
@@ -543,6 +544,10 @@
 
 	<target name="deploy-pscanrulesAlpha" description="deploy the passive scan rules">
 		<build-deploy-addon name="pscanrulesAlpha" />
+	</target>
+	  
+	<target name="deploy-tlsDebug" description="deploy the tlsDebug extension">
+		<build-deploy-addon name="tlsdebug" />
 	</target>
 
 	<target name="deploy-pscanrulesAlpha-without-help-indexes" description="deploy the passive scan rules">
